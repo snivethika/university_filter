@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Filter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Filter Universities by Country</h1>
+
+  <!-- Country Selection -->
+  <div class="search-div">
+    <select id="countryDropdown">
+        <option value="">Select a country</option>
+    </select>
+    <button id="dropdownSearchBtn">Search</button>
+  </div>
+
+  <!-- University Filter (hidden initially) -->
+  <div class="search-div" id="universityFilter" style="display: none;">
+    <input type="text" id="universitySearch" placeholder="Filter University">
+  </div>
+
+  <!-- Loader -->
+  <div id="loader" class="loader" style="display: none;"></div>
+  
+  <!-- Results Container -->
+  <div id="results" class="results-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

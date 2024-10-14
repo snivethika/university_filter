@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #b9efbc;
+    background-image: url('./dallas-hall-historic-building-on-260nw-2455819229.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./dallas-hall-historic-building-on-260nw-2455819229.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5; 
+    z-index: -1;  
+}
+
+
+  
+  h1, h3 {
+    text-align: center;
+    color: #120404;
+    font-size: 45px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .search-div{
+    margin: auto;
+    width: 565px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  @media  (max-width:767px) {
+    .search-div{
+        display: block;
+    }
+    button {
+        width: 100px;
+        height: auto;
+    }
+  }
+
+  input, select, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  button {
+    background-color: #0a6218;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+  }
+  
+  button:hover {
+    background-color: #436d54;
+  }
+  
+  .results-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;  /* Flexbox for vertical alignment */
+    justify-content: space-between;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    align-self: center; 
+  }
+  
+  .card a:hover {
+    background-color: #218838;
+  }
+  
+  /* Loader CSS */
+.loader {
+    border: 12px solid #f3f3f3;
+    border-top: 12px solid #064d13;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* University logo */
+.university-logo {
+    max-width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+
+/* universitySearch */
+
+#universitySearch{
+    border-radius: 10px;
+
+}
+
+  /* pagination */
+  .pagination {
+    left: 0;               
+    right: 0;               
+    text-align: center;    
+    display: flex;         
+    justify-content: center;
+    /* background-color: white;  */
+    padding: 10px 0;        
+    margin-top: 10px;
+    position: absolute;   
+    bottom: 0;
+    margin-bottom: -45px;
+  }
+  
+  .pagination button {
+    margin: 5px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #edeff2;
+    color: #120404;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .pagination button.active {
+    background-color: #0056b3;
+    font-weight: bold;
+    color: #ffff;
+  }
+  
+  .pagination button:hover {
+    background-color: #0056b3;
+  }
+  
+  
